@@ -2,7 +2,7 @@
 #include <cmath>
 #include <algorithm>
 #include <omp.h>
-
+//lanczos v1 cpu (OpenMP)
 namespace {
     double sinc(double x) {
         if (x == 0) return 1.0;
