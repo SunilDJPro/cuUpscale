@@ -3,7 +3,8 @@
 
 enum class UpscaleMethod {
     Bicubic,
-    Lanczos
+    Lanczos,
+    EDI
 };
 
 class Upscaler {

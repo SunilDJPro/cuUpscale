@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/sunildj/cuUpscale/cpuUpscale-v1/src/bicubic.cpp" "CMakeFiles/cpuUpscale.dir/src/bicubic.cpp.o" "gcc" "CMakeFiles/cpuUpscale.dir/src/bicubic.cpp.o.d"
+  "/home/sunildj/cuUpscale/cpuUpscale-v1/src/edi.cpp" "CMakeFiles/cpuUpscale.dir/src/edi.cpp.o" "gcc" "CMakeFiles/cpuUpscale.dir/src/edi.cpp.o.d"
   "/home/sunildj/cuUpscale/cpuUpscale-v1/src/jpeg_cpu.cpp" "CMakeFiles/cpuUpscale.dir/src/jpeg_cpu.cpp.o" "gcc" "CMakeFiles/cpuUpscale.dir/src/jpeg_cpu.cpp.o.d"
   "/home/sunildj/cuUpscale/cpuUpscale-v1/src/lanczos.cpp" "CMakeFiles/cpuUpscale.dir/src/lanczos.cpp.o" "gcc" "CMakeFiles/cpuUpscale.dir/src/lanczos.cpp.o.d"
   "/home/sunildj/cuUpscale/cpuUpscale-v1/src/main.cpp" "CMakeFiles/cpuUpscale.dir/src/main.cpp.o" "gcc" "CMakeFiles/cpuUpscale.dir/src/main.cpp.o.d"

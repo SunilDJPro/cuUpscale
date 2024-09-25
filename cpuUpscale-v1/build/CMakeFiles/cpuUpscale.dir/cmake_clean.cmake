@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/cpuUpscale.dir/src/bicubic.cpp.o"
   "CMakeFiles/cpuUpscale.dir/src/bicubic.cpp.o.d"
+  "CMakeFiles/cpuUpscale.dir/src/edi.cpp.o"
+  "CMakeFiles/cpuUpscale.dir/src/edi.cpp.o.d"
   "CMakeFiles/cpuUpscale.dir/src/jpeg_cpu.cpp.o"
   "CMakeFiles/cpuUpscale.dir/src/jpeg_cpu.cpp.o.d"
   "CMakeFiles/cpuUpscale.dir/src/lanczos.cpp.o"

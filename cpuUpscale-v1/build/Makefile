@@ -153,6 +153,30 @@ src/bicubic.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpuUpscale.dir/build.make CMakeFiles/cpuUpscale.dir/src/bicubic.cpp.s
 .PHONY : src/bicubic.cpp.s
 
+src/edi.o: src/edi.cpp.o
+.PHONY : src/edi.o
+
+# target to build an object file
+src/edi.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpuUpscale.dir/build.make CMakeFiles/cpuUpscale.dir/src/edi.cpp.o
+.PHONY : src/edi.cpp.o
+
+src/edi.i: src/edi.cpp.i
+.PHONY : src/edi.i
+
+# target to preprocess a source file
+src/edi.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpuUpscale.dir/build.make CMakeFiles/cpuUpscale.dir/src/edi.cpp.i
+.PHONY : src/edi.cpp.i
+
+src/edi.s: src/edi.cpp.s
+.PHONY : src/edi.s
+
+# target to generate assembly for a file
+src/edi.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpuUpscale.dir/build.make CMakeFiles/cpuUpscale.dir/src/edi.cpp.s
+.PHONY : src/edi.cpp.s
+
 src/jpeg_cpu.o: src/jpeg_cpu.cpp.o
 .PHONY : src/jpeg_cpu.o
 
@@ -261,6 +285,9 @@ help:
 	@echo "... src/bicubic.o"
 	@echo "... src/bicubic.i"
 	@echo "... src/bicubic.s"
+	@echo "... src/edi.o"
+	@echo "... src/edi.i"
+	@echo "... src/edi.s"
 	@echo "... src/jpeg_cpu.o"
 	@echo "... src/jpeg_cpu.i"
 	@echo "... src/jpeg_cpu.s"

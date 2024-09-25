@@ -2,9 +2,18 @@
 #include "upscaler.h"
 #include <iostream>
 
+UpscaleMethod parseMethod(const std::string& method_str) {
+    if (method_str == "bicubic") return UpscaleMethod::Bicubic;
+    if (method_str == "lanczos") return UpscaleMethod::Lanczos;
+    if (method_str == "edi") return UpscaleMethod::EDI;
+    throw std::runtime_error("Unknown upscale method: " + method_str);
+}
+
+
 int main(int argc, char** argv) {
     if (argc != 5) {
-        std::cerr << "Usage: " << argv[0] << " <input.jpg> <output.jpg> <scale_factor> <method>" << std::endl;
+        std::cerr << "Usage: " << argv[0] << " <input_image> <output_image> <scale_factor> <method>" << std::endl;
+        std::cerr << "Methods: bicubic, lanczos, edi" << std::endl;
         return 1;
     }
 

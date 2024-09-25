@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/sunildj/cuUpscale/cpuUpscale-v1/src
 
-CXX_FLAGS = -fopenmp -std=gnu++20
+CXX_FLAGS = -O3 -fopenmp -std=gnu++20
 
