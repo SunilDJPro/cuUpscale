@@ -6,7 +6,6 @@
 ###       POWERED BY
 ![POWERED BY CUDA](https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/Nvidia_CUDA_Logo.jpg/220px-Nvidia_CUDA_Logo.jpg)
 
-> **Image Upscaling tool accelerated with CUDA**
 
 cuUpscale is a high-performance image upscaling tool that supports both CPU and CUDA-based GPU upscaling techniques. This project is designed to handle large resolutions with efficient parallelization using OpenMP for CPUs and CUDA for GPUs.
 
