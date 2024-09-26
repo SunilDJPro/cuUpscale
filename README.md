@@ -1,7 +1,9 @@
 # cuUpscale
 
-![CUDA 12](https://img.shields.io/badge/CUDA-12-brightgreen)
+![CUDA 12](https://img.shields.io/badge/CUDA-12-passing-green)
 ![CPU_BUILD](https://img.shields.io/badge/CPU_BUILD-passing-green)
+
+![POWERED BY CUDA] (https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/Nvidia_CUDA_Logo.jpg/220px-Nvidia_CUDA_Logo.jpg)
 
 > **Image Upscaling tool accelerated with CUDA**
 
@@ -17,7 +19,7 @@ cuUpscale is a high-performance image upscaling tool that supports both CPU and 
 - Utilizes **OpenMP** to parallelize loops at the CPU level, speeding up the upscaling process.
 
 ### ⚡ **cuUpscale**
-- Performs **Lanczos** and **Edge Directed Interpolation (EDI)** upscaling using **CUDA C/C++** with support for **CUDA 12**.
+- Performs **Lanczos** and **Edge Directed Interpolation (EDI)** upscaling using **CUDA C/C++** with support for **CUDA 12**. (Updated from original 11.8 build)
 - Capable of scaling images up to **x16** and handling input/output images with resolutions up to **32K** without overflow issues.
 - Quadratic loop complexity (**O(n^3)** worst case), but efficiently parallelized across **Streaming Multiprocessors**.
   - Tested on **RTX 3080Ti** with **80 SMs**, successfully upscaling from **4K to 16K** with high performance.
