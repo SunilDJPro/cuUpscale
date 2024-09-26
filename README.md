@@ -1,9 +1,9 @@
 # cuUpscale
 
-![CUDA 12](https://img.shields.io/badge/CUDA-12-passing-green)
+![CUDA 12](https://img.shields.io/badge/CUDA-12-brightgreen)
 ![CPU_BUILD](https://img.shields.io/badge/CPU_BUILD-passing-green)
 
-![POWERED BY CUDA] (https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/Nvidia_CUDA_Logo.jpg/220px-Nvidia_CUDA_Logo.jpg)
+![POWERED BY CUDA](https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/Nvidia_CUDA_Logo.jpg/220px-Nvidia_CUDA_Logo.jpg)
 
 > **Image Upscaling tool accelerated with CUDA**
 
