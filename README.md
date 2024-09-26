@@ -3,6 +3,7 @@
 ![CUDA 12](https://img.shields.io/badge/CUDA-12-brightgreen)
 ![CPU_BUILD](https://img.shields.io/badge/CPU_BUILD-passing-green)
 
+### POWERED BY
 ![POWERED BY CUDA](https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/Nvidia_CUDA_Logo.jpg/220px-Nvidia_CUDA_Logo.jpg)
 
 > **Image Upscaling tool accelerated with CUDA**
@@ -28,7 +29,7 @@ cuUpscale is a high-performance image upscaling tool that supports both CPU and 
 
 ## 🛠️ Technologies Used
 
-- **CUDA 12** for GPU acceleration.
+- **CUDA 12.4** for GPU acceleration.
 - **OpenMP** for CPU parallelism.
 - **C/C++** for performance-critical upscaling algorithms.
 
