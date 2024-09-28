@@ -3,6 +3,7 @@
 #include <algorithm>
 #include <stdexcept>
 #include <omp.h>
+//Edge Detected Interpolation
 
 EDIUpscaler::EDIUpscaler() {}
 
@@ -75,12 +76,12 @@ float EDIUpscaler::interpolatePixel(const std::vector<float>& input, int width, 
     float gy = calculateGradient(a, c, b, d);
 
     if (std::abs(gx) > std::abs(gy)) {
-        // Interpolate along y-axis
+        //Interpolate along y-axis
         float i1 = a + fy * (c - a);
         float i2 = b + fy * (d - b);
         return i1 + fx * (i2 - i1);
     } else {
-        // Interpolate along x-axis
+        //Interpolate along x-axis
         float i1 = a + fx * (b - a);
         float i2 = c + fx * (d - c);
         return i1 + fy * (i2 - i1);

@@ -1,3 +1,0 @@
-/home/sunildj/cuUpscale/cpuUpscale-v1/build/CMakeFiles/cpuUpscale.dir
-/home/sunildj/cuUpscale/cpuUpscale-v1/build/CMakeFiles/edit_cache.dir
-/home/sunildj/cuUpscale/cpuUpscale-v1/build/CMakeFiles/rebuild_cache.dir
