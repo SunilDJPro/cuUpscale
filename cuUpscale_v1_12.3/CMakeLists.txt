@@ -16,7 +16,7 @@ add_executable(upscale
     src/lanczos.cu
     src/cuda_utils.cu
     src/edi.cuh
-    src/edi.cpp
+    src/edi.cu
 )
 
 target_link_libraries(upscale ${JPEG_LIBRARIES} ${CUDA_LIBRARIES})

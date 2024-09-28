@@ -14,9 +14,10 @@ __device__ float interpolatePixel(const float* input, int width, int height, int
                                 
     int x0 = static_cast<int>(floor(x));
     int y0 = static_cast<int>(floor(y));
-    
+
+
     int x1 = min(x0 + 1, width - 1);
-    int x2 = min(y0 + 1, height - 1);
+    int y1 = min(y0 + 1, height - 1);
 
     float fx = x - x0;
     float fy = y - y0;
@@ -79,6 +80,7 @@ std::vector<uint8_t> upscale(const std::vector<uint8_t>& input_image,
     int output_height = static_cast<int>(input_height * scale_factor);
 
     //Set device to use (Single GPU Only)
+    cudaDeviceProp SMprop;
     int device = 0;
     CUDA_CHECK(cudaSetDevice(device));
     cudaGetDeviceProperties(&SMprop, device);

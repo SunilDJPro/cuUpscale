@@ -1,7 +1,7 @@
 #pragma once
 
 #include <vector>
-#include <cstint>
+#include <cstdint>
 #include <cuda_runtime.h>
 
 namespace cuEDI {
