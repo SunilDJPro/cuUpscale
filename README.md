@@ -3,6 +3,8 @@
 ![CUDA 12](https://img.shields.io/badge/CUDA-12-brightgreen)
 ![CPU_BUILD](https://img.shields.io/badge/CPU_BUILD-passing-green)
 ![GitHub repo size](https://img.shields.io/github/repo-size/SunilDJPro/cuUpscale)
+![GitHub language count](https://img.shields.io/github/languages/count/SunilDJPro/cuUpscale)
+![GitHub top language](https://img.shields.io/github/languages/top/SunilDJPro/cuUpscale)
 
 ###       POWERED BY
 ![POWERED BY CUDA](https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/Nvidia_CUDA_Logo.jpg/220px-Nvidia_CUDA_Logo.jpg)
