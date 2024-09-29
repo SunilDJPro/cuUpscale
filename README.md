@@ -31,9 +31,9 @@ cuUpscale is a high-performance image upscaling tool that supports both CPU and 
 
 ## 🛠️ Technologies Used
 
-- **CUDA 12.4** for GPU acceleration.
+- **CUDA 12** for GPU acceleration.
 - **OpenMP** for CPU parallelism.
-- **C/C++** for performance-critical upscaling algorithms.
+
 
 ---
 
