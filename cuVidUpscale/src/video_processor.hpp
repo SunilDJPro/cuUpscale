@@ -37,7 +37,7 @@ class VideoProcessor {
 
         std::unique_ptr<NvDecWrapper> m_decoder;
         std::unique_ptr<NvEncWrapper> m_encoder;
-        std::unique_ptr<FrameUpscaler> m_upscaler;
+        std::unique_ptr<LanczosUpscaler> m_upscaler;
         std::unique_ptr<AudioProcessor> m_audio_prcessor;
 
         cudaStream_t m_cuda_stream; //CuStream define
@@ -55,3 +55,4 @@ class VideoProcessor {
         int m_batch_size;
 
 };
+
