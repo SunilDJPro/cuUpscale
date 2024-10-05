@@ -18,14 +18,14 @@ NvDecWrapper::~NvDecWrapper() {
 }
 
 bool NvDecWrapper::initialize() {
-    // Initialize CUDA context
+    //Init CUDA
     CUdevice cuda_device;
     CUDA_CHECK(cuInit(0));
     CUDA_CHECK(cuDeviceGet(&cuda_device, 0));
     CUDA_CHECK(cuCtxCreate(&m_cuda_context, 0, cuda_device));
     CUDA_CHECK(cuvidCtxLockCreate(&m_ctx_lock, m_cuda_context));
 
-    // Initialize FFmpeg
+    //Init FFmpeg
     avformat_network_init();
     m_format_context = avformat_alloc_context();
     if (avformat_open_input(&m_format_context, m_input_file.c_str(), nullptr, nullptr) != 0) {
@@ -59,7 +59,7 @@ bool NvDecWrapper::initialize() {
     m_frame_rate = static_cast<float>(video_stream->avg_frame_rate.num) / video_stream->avg_frame_rate.den;
     m_total_frames = static_cast<int>(video_stream->nb_frames);
 
-    // Initialize NVDEC
+    //Init NVDEC
     CUVIDPARSERPARAMS parser_params = {};
     parser_params.CodecType = ffmpeg_to_cuvid_codec(m_codec_context->codec_id);
     parser_params.ulMaxNumDecodeSurfaces = 1;
@@ -98,7 +98,7 @@ bool NvDecWrapper::decodeNextFrame(std::vector<uint8_t>& frame_buffer) {
             return false;
         }
 
-        // Copy decoded frame from GPU to CPU
+        //Copy decoded frame from GPU to CPU -> temp
         if (!m_decoded_frame_buffer.empty()) {
             frame_buffer = m_decoded_frame_buffer;
             m_decoded_frame_buffer.clear();
